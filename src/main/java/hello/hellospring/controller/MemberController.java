@@ -20,6 +20,7 @@ public class MemberController {
     public MemberController(MemberService memberService) {
         /* DI(Dependency Injection) : 의존 관계를 넣어준다 */
         this.memberService = memberService;
+        //System.out.println("memberService = " + memberService.getClass()); // AOP 사용 시 MembersService$$EnhancerBySpringCGLIB 으로 나온다. Proxy MemberService !
     }
 
     /* DI Setter 주입법
